@@ -1,0 +1,7 @@
+apache-airflow-providers-microsoft-mssql
+apache-airflow-providers-odbc
+apache-airflow-providers-microsoft-azure
+apache-airflow-providers-common-sql
+pymssql
+methodtools
+pyodbc
