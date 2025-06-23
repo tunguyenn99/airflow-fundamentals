@@ -90,6 +90,14 @@ Tạo `Dockerfile` tương ứng:
 
 ```dockerfile
 FROM apache/airflow:3.0.2
+ADD requirements.txt .
+RUN pip install apache-airflow==${AIRFLOW_VERSION} -r requirements.txt
+```
+
+hoặc sâu hơn
+
+```dockerfile
+FROM apache/airflow:3.0.2
 USER root
 
 RUN apt-get update && apt-get install -y \
